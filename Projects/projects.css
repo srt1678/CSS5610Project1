@@ -1,0 +1,69 @@
+.projectPageContainer {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	top: 200px;
+	height: auto;
+	width: 100vw;
+	overflow: hidden;
+}
+.projectContainer {
+	display: grid;
+	grid-template-areas:
+		"img1 img2"
+		"img3 img4"
+		"description description";
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 10px;
+	width: 80%;
+}
+.projectImg1 {
+	grid-area: img1;
+}
+.projectImg2 {
+	grid-area: img2;
+}
+.projectImg3 {
+	grid-area: img3;
+}
+.projectImg4 {
+	grid-area: img4;
+}
+.projectDescriptionContainer {
+	grid-area: description;
+}
+.projectImg {
+	width: 100%;
+	height: 100%;
+	border: 1px solid black;
+}
+.projectDescriptionContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.projectTitle {
+	margin-bottom: 0px;
+	font-size: 30px;
+	font-style: italic;
+	text-decoration: underline;
+}
+.projectBulletPoints li {
+	font-size: 18px;
+	line-height: 25px;
+	margin-bottom: 5px;
+}
+.projectLinkContainer {
+	display: flex;
+	width: 20%;
+	justify-content: space-between;
+}
+.projectLinkLogo {
+	width: 80px;
+	height: 80px;
+	border-radius: 40px;
+	border: 1px solid black;
+}

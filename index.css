@@ -121,6 +121,7 @@ body {
 	background-color: rgb(165, 164, 164);
 	border-radius: 2.5px;
 	margin-top: 50px;
+    margin-bottom: 50px;
 }
 /*------Education Section------*/
 .educationSectionContainer {
@@ -128,7 +129,6 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 50px;
 	/*background-color: orange;*/
 }
 .schoolContainer {
@@ -163,7 +163,6 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-top: 50px;
 	/*background-color: orange;*/
 }
 .experienceContainer {
@@ -188,6 +187,7 @@ body {
 	margin-left: 20px;
 	font-size: 25px;
 	margin-bottom: 0px;
+    text-decoration: underline;
 }
 .experienceBulletPoints li {
 	font-size: 20px;
