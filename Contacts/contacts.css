@@ -1,0 +1,33 @@
+.contactBody{
+    height: 0px;
+}
+.contactPageContainer {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	top: 200px;
+	height: auto;
+	width: 100vw;
+	overflow: hidden;
+}
+.contactContainer{
+    width: 600px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+.contactLine{
+    display: flex;
+    justify-content: space-between;
+}
+.contactMediaLine{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.contactMediaLogo{
+    width: 100px;
+    border-radius: 50px;
+    border: 1px solid black;
+}

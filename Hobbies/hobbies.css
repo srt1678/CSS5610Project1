@@ -1,0 +1,50 @@
+.hobbiesBody{
+    height: auto;
+    margin-bottom: 250px;
+}
+.hobbiesPageContainer {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	top: 150px;
+	height: auto;
+	width: 100vw;
+	overflow: hidden;
+}
+.hobbyTitleText {
+	letter-spacing: 3px;
+	font-size: 40px;
+}
+.hobbyListContainer {
+	display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+}
+.hobbyItemContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	background-color: blue;
+}
+.hobbyItem,
+.hobbyItemTop,
+.hobbyItemBot {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 100px;
+    margin-bottom: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border: 1px solid black;
+}
+.hobbyItemTop {
+	object-position: top;
+}
+.hobbyItemBot {
+	object-position: bottom;
+}
