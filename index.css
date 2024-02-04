@@ -15,43 +15,32 @@ body {
 	background-color: rgb(60, 54, 54);
 	display: flex;
 	justify-content: center;
+	flex-direction: column;
 	align-items: center;
 	z-index: 99;
 }
-.navBarCenterContainer {
-	/*background-color: blue;*/
-	height: 100%;
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding-top: 10px;
-}
-.navBarTitleContainer,
 .navBarLinkContainer {
 	display: flex;
 	align-items: center;
-	width: 750px;
-	height: 40%;
-	/*background-color: brown;*/
-}
-.navBarTitleContainer {
-	justify-content: center;
+	width: 600px;
+	height: 10%;
+	justify-content: space-between;
 }
 .titleText {
 	letter-spacing: 5px;
 	color: white;
-	font-size: 40px;
-}
-.navBarLinkContainer {
-	justify-content: space-between;
+	font-size: 35px;
 }
 .linkText {
 	color: white;
 	letter-spacing: 2px;
 	transition: 0.3s ease-in-out;
-	font-size: 30px;
+	font-size: 20px;
+	padding-bottom: 3px;
+}
+.currentPage {
+	text-decoration: underline;
+	font-size: 25px;
 }
 .linkText:hover {
 	transform: scale(1.3);
@@ -91,11 +80,11 @@ body {
 	display: flex;
 	justify-content: center;
 	height: 300px;
-	/*background-color: aqua;*/
 }
 .profileImg {
 	width: 300px;
 	border-radius: 150px;
+	box-shadow: 5px 5px 5px gray;
 }
 .introductionContainer {
 	display: flex;
@@ -104,7 +93,6 @@ body {
 	width: 50%;
 	margin-left: 40px;
 	margin-right: 40px;
-	/*background-color: blueviolet;*/
 }
 .introductionText {
 	text-align: center;
@@ -121,7 +109,7 @@ body {
 	background-color: rgb(165, 164, 164);
 	border-radius: 2.5px;
 	margin-top: 50px;
-    margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 /*------Education Section------*/
 .educationSectionContainer {
@@ -129,7 +117,6 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/*background-color: orange;*/
 }
 .schoolContainer {
 	display: flex;
@@ -140,19 +127,18 @@ body {
 	width: 150px;
 	height: 150px;
 	border-radius: 50%;
+	box-shadow: 5px 5px 5px gray;
 }
 .schoolDescription {
 	margin-left: 20px;
 	margin-right: 20px;
-	/*background-color: lightpink;*/
 }
 .schoolNameText,
 .schoolDescriptionText {
-	/*background-color: blue;*/
 	letter-spacing: 2px;
 }
-.schoolDescription > h3:first-child{
-    font-style: italic;
+.schoolDescription > h3:first-child {
+	font-style: italic;
 	font-size: 25px;
 	text-decoration: underline;
 }
@@ -163,7 +149,6 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	/*background-color: orange;*/
 }
 .experienceContainer {
 	display: flex;
@@ -178,6 +163,7 @@ body {
 	width: 100%;
 	border-radius: 150px;
 	border: 2px solid black;
+	box-shadow: 5px 5px 5px gray;
 }
 .experienceDescriptionContainer {
 	width: 100%;
@@ -187,7 +173,7 @@ body {
 	margin-left: 20px;
 	font-size: 25px;
 	margin-bottom: 0px;
-    text-decoration: underline;
+	text-decoration: underline;
 }
 .experienceBulletPoints li {
 	font-size: 20px;
@@ -195,9 +181,12 @@ body {
 	margin-bottom: 5px;
 }
 @media (max-width: 768px) {
+	.navBarLinkContainer {
+		width: 500px;
+	}
 	.introductionSectionContainer {
 		flex-direction: column;
-		height: 700px;
+		height: auto;
 		align-items: center;
 	}
 	.profileImg {
@@ -232,5 +221,27 @@ body {
 		justify-content: center;
 		align-items: center;
 		margin-left: 0px;
+	}
+}
+@media (max-width: 576px) {
+	.navBarLinkContainer {
+		width: 90%;
+	}
+	.linkText {
+		font-size: 12px;
+	}
+	.currentPage {
+		font-size: 15px;
+	}
+	.profileImg {
+		height: 300px;
+		width: 300px;
+	}
+	.introductionText {
+		font-size: 20px;
+	}
+	.schoolContainer {
+		flex-direction: column;
+		margin-bottom: 15px;
 	}
 }

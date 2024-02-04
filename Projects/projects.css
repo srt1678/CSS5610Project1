@@ -38,6 +38,7 @@
 	width: 100%;
 	height: 100%;
 	border: 1px solid black;
+	box-shadow: 5px 5px 5px gray;
 }
 .projectDescriptionContainer {
 	display: flex;
@@ -58,7 +59,7 @@
 }
 .projectLinkContainer {
 	display: flex;
-	width: 20%;
+	width: 200px;
 	justify-content: space-between;
 }
 .projectLinkLogo {
@@ -66,4 +67,20 @@
 	height: 80px;
 	border-radius: 40px;
 	border: 1px solid black;
+	box-shadow: 5px 5px 5px gray;
+}
+@media (max-width: 768px){
+	.projectContainer {
+		display: grid;
+		grid-template-areas:
+			"img1"
+			"img2"
+			"img3"
+			"img4"
+			"description";
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		grid-gap: 10px;
+		width: 80%;
+	}
 }

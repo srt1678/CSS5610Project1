@@ -7,4 +7,4 @@
 3. - When I developed my website, I focusing on the alignment. Whether the text/sections/images all should be align properly. Also what would the website look like if I make it responsive: should I use flex here or grid? Should I resize the images to better fit the container? These are the questions I faced when I was working on the website. 
    - I'm most proud of my home page, I like my overall design of the page of having a banner underneath the nav bar, a profile pic, introduction; follow with education and experience. Overall I think it looks decent and organized.
 4. - Want to be able to use JS and create different buttons for the user to interact with. Especially build a text box so users can leave a message or sent an email directly.
-5. I spend aroud 5 days, or 30 hours on this. Mostly stuck on flex/grid/responsiveness.
+5. - I spend aroud 5 days, or 30 hours on this. Mostly stuck on flex/grid/responsiveness.

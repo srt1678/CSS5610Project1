@@ -13,7 +13,7 @@
 }
 .contactContainer{
     width: 600px;
-    height: 350px;
+    height: auto;
     display: flex;
     flex-direction: column;
 }
@@ -30,4 +30,16 @@
     width: 100px;
     border-radius: 50px;
     border: 1px solid black;
+    box-shadow: 5px 5px 5px gray;
+}
+@media (max-width: 768px){
+    .contactLine{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactLine >h2{
+        font-size: 20px;
+    }
 }
